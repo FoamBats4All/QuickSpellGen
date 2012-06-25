@@ -192,7 +192,7 @@
            <string>Script that is called when the spell has been cast.</string>
           </property>
           <property name="text">
-           <string>acr_s0_rp</string>
+           <string></string>
           </property>
           <property name="maxLength">
            <number>48</number>
