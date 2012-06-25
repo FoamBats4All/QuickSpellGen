@@ -1669,107 +1669,7 @@
           </item>
           <item>
            <property name="text">
-            <string>sp_abjuration_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_conjuration_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_divination_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_enchantment_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_evocation_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_illusion_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_necromancy_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_transmutation_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_acid_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_fire_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_ice_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_lightning_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_sonic_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
             <string>sp_magic_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_holy_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_bless_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_darkness_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_cure_conj_w.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_inflict_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_rayfrost_conjure.sef</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>sp_eldritch_conjure</string>
            </property>
           </item>
          </widget>
@@ -2210,7 +2110,17 @@
           </item>
           <item>
            <property name="text">
+            <string>area</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
             <string>attack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bardsong</string>
            </property>
           </item>
           <item>
@@ -2220,12 +2130,7 @@
           </item>
           <item>
            <property name="text">
-            <string>hand</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>head</string>
+            <string>general</string>
            </property>
           </item>
           <item>
@@ -2235,7 +2140,7 @@
           </item>
           <item>
            <property name="text">
-            <string>party</string>
+            <string>out</string>
            </property>
           </item>
           <item>
@@ -2245,7 +2150,12 @@
           </item>
           <item>
            <property name="text">
-            <string>bardsong</string>
+            <string>touch</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>up</string>
            </property>
           </item>
          </widget>
