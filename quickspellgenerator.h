@@ -132,6 +132,7 @@ public:
 		MetaMagic_Silent = 0x10,
 		MetaMagic_Still = 0x20,
 		MetaMagic_Persistent = 0x40
+		MetaMagic_Unknown = 0x80
 	};
 
 	enum TargetTypes {
