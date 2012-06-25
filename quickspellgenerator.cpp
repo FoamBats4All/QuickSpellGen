@@ -56,8 +56,8 @@ void QuickSpellGenerator::UpdateOutput() {
 
 	// VS
 	content = "";
-	if ( ui.VS_V->isChecked() ) content += "V";
-	if ( ui.VS_S->isChecked() ) content += "S";
+	if ( ui.VS_V->isChecked() ) content += "v";
+	if ( ui.VS_S->isChecked() ) content += "s";
 	if ( content.isEmpty() ) content = "****";
 	ui.Output->insert( content.leftJustified( ColWidth_VS + 1, ' ' ) );
 
