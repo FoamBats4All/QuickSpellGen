@@ -1,0 +1,3713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuickSpellGeneratorClass</class>
+ <widget class="QMainWindow" name="QuickSpellGeneratorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>602</width>
+    <height>418</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quick Spell Generator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabInfo">
+       <attribute name="title">
+        <string>Info</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Label:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="Label">
+          <property name="maxLength">
+           <number>48</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Name:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="Name">
+          <property name="statusTip">
+           <string>Name of the spell. TLK reference.</string>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>99999999</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>SpellDesc:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="SpellDesc">
+          <property name="statusTip">
+           <string>Spell description. TLK reference.</string>
+          </property>
+          <property name="maximum">
+           <number>99999999</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>AltMessage:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSpinBox" name="AltMessage">
+          <property name="statusTip">
+           <string>Message displayed when the spell is cast. TLK reference.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9999999</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>IconResRef:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="IconResRef">
+          <property name="statusTip">
+           <string>Spell's icon.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>48</number>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ImpactScript:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="ImpactScript">
+          <property name="statusTip">
+           <string>Script that is called when the spell has been cast.</string>
+          </property>
+          <property name="text">
+           <string>acr_s0_rp</string>
+          </property>
+          <property name="maxLength">
+           <number>48</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>FeatID:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QSpinBox" name="FeatID">
+          <property name="statusTip">
+           <string>Which feat casts this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Category:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QSpinBox" name="Category">
+          <property name="statusTip">
+           <string>Used for AI.</string>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>99</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>UserType:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QComboBox" name="UserType">
+          <property name="statusTip">
+           <string>What type of Spell it is.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Spell</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Spell-like ability</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Feat</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Special</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ItemImmunity:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QCheckBox" name="ItemImmunity">
+          <property name="statusTip">
+           <string>Can an item be give immunity to this spell?</string>
+          </property>
+          <property name="text">
+           <string> </string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_91">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ID:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="ID">
+          <property name="statusTip">
+           <string>Name of the spell. TLK reference.</string>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>9999999</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabData">
+       <attribute name="title">
+        <string>Data</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>School:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Range:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>VS:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>MetaMagic:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>UseConcentration:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_17">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Master:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_18">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>SubRadSpells:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="School">
+          <property name="statusTip">
+           <string>What school of magic the spell is classified as.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>General (G)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Abjuration (A)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Conjuration (C)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Divination (D)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Enchantment (E)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Evocation (V)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Illusion (I)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Necromancy (N)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Transmutation (T)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="Range">
+          <property name="statusTip">
+           <string>Range of the spell.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Personal (P)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Touch (T)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Short (S)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Medium (M)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Long (L)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QCheckBox" name="VS_V">
+            <property name="statusTip">
+             <string>Requires a verbal (audio) component.</string>
+            </property>
+            <property name="text">
+             <string>Verbal</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="VS_S">
+            <property name="statusTip">
+             <string>Requires a somatic (gesture) component.</string>
+            </property>
+            <property name="text">
+             <string>Somatic</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Silent">
+            <property name="statusTip">
+             <string>This spell can be silenced.</string>
+            </property>
+            <property name="text">
+             <string>Silent</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Still">
+            <property name="statusTip">
+             <string>This spell can be stilled.</string>
+            </property>
+            <property name="text">
+             <string>Still</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Empower">
+            <property name="statusTip">
+             <string>This spell can be empowered.</string>
+            </property>
+            <property name="text">
+             <string>Empower</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Maximize">
+            <property name="statusTip">
+             <string>This spell can be maximized.</string>
+            </property>
+            <property name="text">
+             <string>Maximize</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Quicken">
+            <property name="statusTip">
+             <string>This spell can be quickened.</string>
+            </property>
+            <property name="text">
+             <string>Quicken</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Extend">
+            <property name="statusTip">
+             <string>This spell can be extended.</string>
+            </property>
+            <property name="text">
+             <string>Extend</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="MetaMagic_Persistent">
+            <property name="statusTip">
+             <string>This spell can be made persistent.</string>
+            </property>
+            <property name="text">
+             <string>Persistent</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="6" column="1">
+         <widget class="QCheckBox" name="UseConcentration">
+          <property name="statusTip">
+           <string>Can the spell be interrupted?</string>
+          </property>
+          <property name="text">
+           <string> </string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QSpinBox" name="Master">
+          <property name="statusTip">
+           <string>What spell is needed to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QSpinBox" name="SubRadSpell1">
+            <property name="statusTip">
+             <string>ID of a selectable subspell.</string>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="SubRadSpell2">
+            <property name="statusTip">
+             <string>ID of a selectable subspell.</string>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="SubRadSpell3">
+            <property name="statusTip">
+             <string>ID of a selectable subspell.</string>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="SubRadSpell4">
+            <property name="statusTip">
+             <string>ID of a selectable subspell.</string>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="SubRadSpell5">
+            <property name="statusTip">
+             <string>ID of a selectable subspell.</string>
+            </property>
+            <property name="minimum">
+             <number>-1</number>
+            </property>
+            <property name="maximum">
+             <number>9999</number>
+            </property>
+            <property name="value">
+             <number>-1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_33">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>CastTime:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="CastTime">
+          <property name="statusTip">
+           <string>Time between the casting of the spell and when you can move the caster.</string>
+          </property>
+          <property name="maximum">
+           <number>99999999</number>
+          </property>
+          <property name="singleStep">
+           <number>500</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_78">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjTime</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSpinBox" name="ConjTime">
+          <property name="statusTip">
+           <string>Time taken to channel the spell; 1000 = 1 RL second.</string>
+          </property>
+          <property name="maximum">
+           <number>99999999</number>
+          </property>
+          <property name="singleStep">
+           <number>500</number>
+          </property>
+          <property name="value">
+           <number>1500</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabClasses">
+       <attribute name="title">
+        <string>Classes</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Bard:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="Bard">
+          <property name="statusTip">
+           <string>Level at which bards are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>6</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_20">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Cleric:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_21">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Druid:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Paladin:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_23">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Ranger:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_24">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Wizard/Sorcerer:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_25">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Warlock:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_26">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Innate:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_27">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>SpontaneouslyCast:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_28">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>SpontCastClassReq:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QSpinBox" name="Cleric">
+          <property name="statusTip">
+           <string>Level at which clerics are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QSpinBox" name="Druid">
+          <property name="statusTip">
+           <string>Level at which druids are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="Paladin">
+          <property name="statusTip">
+           <string>Level at which paladins are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>4</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QSpinBox" name="Ranger">
+          <property name="statusTip">
+           <string>Level at which rangers are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>4</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QSpinBox" name="Wiz_Sorc">
+          <property name="statusTip">
+           <string>Level at which wizards and sorcerers are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QSpinBox" name="Warlock">
+          <property name="statusTip">
+           <string>Level at which warlocks are able to cast this spell.</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>4</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QSpinBox" name="Innate">
+          <property name="statusTip">
+           <string>Innate spell level.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QSpinBox" name="SpontCastClassReq">
+          <property name="statusTip">
+           <string>Which class can spontaneously cast this spell?</string>
+          </property>
+          <property name="minimum">
+           <number>-1</number>
+          </property>
+          <property name="maximum">
+           <number>9999</number>
+          </property>
+          <property name="value">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QCheckBox" name="SpontaneouslyCast">
+          <property name="statusTip">
+           <string>Can this spell be spontaneously cast?</string>
+          </property>
+          <property name="text">
+           <string> </string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabTarges">
+       <attribute name="title">
+        <string>Targets</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="HostileSetting">
+            <property name="statusTip">
+             <string>Hostile spell.</string>
+            </property>
+            <property name="text">
+             <string>Hostile</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="TargetType_Self">
+            <property name="statusTip">
+             <string>This spell can target the caster.</string>
+            </property>
+            <property name="text">
+             <string>Self</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="TargetType_Creatures">
+            <property name="statusTip">
+             <string>This spell can target creatures.</string>
+            </property>
+            <property name="text">
+             <string>Creatures</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="TargetType_Items">
+            <property name="statusTip">
+             <string>This spell can target items.</string>
+            </property>
+            <property name="text">
+             <string>Items</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="TargetType_Traps">
+            <property name="statusTip">
+             <string>This spell can target traps.</string>
+            </property>
+            <property name="text">
+             <string>Traps</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="TargetType_Doors">
+            <property name="statusTip">
+             <string>This spell can target doors.</string>
+            </property>
+            <property name="text">
+             <string>Doors</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="TargetType_Placeables">
+            <property name="statusTip">
+             <string>This spell can target placeables.</string>
+            </property>
+            <property name="text">
+             <string>Placeables</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QCheckBox" name="TargetType_Area">
+            <property name="statusTip">
+             <string>This spell can target an area.</string>
+            </property>
+            <property name="text">
+             <string>Area/Ground</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QCheckBox" name="CastableOnDead">
+            <property name="statusTip">
+             <string>This spell can target dead objects.</string>
+            </property>
+            <property name="text">
+             <string>Dead Objects</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QComboBox" name="TargetingUI">
+          <property name="statusTip">
+           <string>Different types of targetting visual effects that come up when playing clicks to cast spell.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Point (2m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Point, Mundane (2m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bolt (3m x 30m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Small (3.048m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Medium (6.096m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Large (9.144m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Huge (12.138m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Gargantuan (5.24)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Colossal (18.288)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Mundane, Medium (6.096m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Mundane, Huge (12.138m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Tremendous (24.4m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Ginormous (30.5m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Circle, Vast (36.m5)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cone (4.572m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cone (8m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cone (9.144m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Cone (11m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rectangle (10m x 1m)</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Rectangle (10m x 2m)</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>236</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabAnimations">
+       <attribute name="title">
+        <string>Animations</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_7">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_29">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjAnim:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="ConjAnim">
+          <property name="statusTip">
+           <string>What type of animation the spell uses during casting.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Attack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Defensive</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Head</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Major</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Party</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bardsong</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_30">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjVisual0:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="ConjVisual0">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_divination_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_cure_conj_w.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_inflict_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_rayfrost_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_conjure</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_31">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>LowConjVisual0:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="LowConjVisual0">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_divination_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_cure_conj_w.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_inflict_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_rayfrost_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_conjure</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_32">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjVisual1:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="ConjVisual1">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_lgupnatr01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_mehanelec02</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_mehanodd02</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_smhanelec01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_smhannatr01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_smhanodd01</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_34">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjVisual2:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="ConjVisual2">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vco_lgsprelec01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_lgupnatr01</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_35">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>CastAnim:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="CastAnim">
+          <property name="statusTip">
+           <string>What type of animation the spell uses during casting.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Attack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Defensive</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Hand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Head</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Major</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Party</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Bardsong</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_37">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>CastVisual0:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="CastVisual0">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_divination_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_cure_conj_w.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_inflict_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_rayfrost_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_conjure</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_75">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>LowCastVisual0:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="LowCastVisual0">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_divination_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_cure_conj_w.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_inflict_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_rayfrost_conjure.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_conjure</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabSounds">
+       <attribute name="title">
+        <string>Sounds</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_8">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_36">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjSoundMale:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="ConjSoundMale">
+          <item>
+           <property name="text">
+            <string>Silent</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_conj_hm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_conj_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_ench_hm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_ench_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_evoc_hm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_evoc_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_illu_hm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_illu_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_hm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_li_lm</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_lock_lei_hm</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_76">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjSoundFemale:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QComboBox" name="ConjSoundFemale">
+          <item>
+           <property name="text">
+            <string>Silent</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_conj_hf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_conj_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_ench_hf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_ench_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_evoc_hf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_evoc_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_illu_hf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_illu_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_hf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_necr_li_lf</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vs_chant_lock_lei_hf</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_77">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjSoundOverride:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="ConjSoundOverride">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A0Cantrip</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D0Cantrip</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>damnation</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>entropichusk</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>epicgate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hellball</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>massfowl</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vampiricfeast</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>I1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>I2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>I3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>I4</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_79">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ConjSoundVFX:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="ConjSoundVFX">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>as_n2_cresendo2a</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_mehannatr01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_mehanelec01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_mehansonc02</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_mehancold03</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_mehanmind01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sco_lgsprelec01</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabProjectiles">
+       <attribute name="title">
+        <string>Projectiles</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout_9">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_80">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>HasProjectile:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_81">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Proj:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_82">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjModel:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_83">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjSEF:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_84">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>LowProjSEF:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_85">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjType:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_86">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjSpwnPoint:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_87">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjSound:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_88">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ProjOrientation:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_89">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>ImpactSEF:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_90">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>LowImpactSEF:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QCheckBox" name="HasProjectile">
+          <property name="text">
+           <string> </string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="Proj">
+          <property name="text">
+           <string> </string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="ProjModel">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>w_arrow01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>w_flask</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vpr_ectonatr01</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>vpr_los</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>missingobject</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QComboBox" name="ProjSEF">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_travel</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_proj</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bombardment.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fireball</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_hellball.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_isaac_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_isaac_greater.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magicmissile.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_meteor_swarm.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbAcid_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbSound_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbAcid.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbCold.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbElec.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbElec_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbFire.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbSound.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_scintillating_sphere.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_shades_tgt.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_arrowtrail.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_infinite_arrow.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_quillfire.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_shard_attack.sef</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="ProjType">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>accelerating</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ballistic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>burst</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>burstup</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>highballistic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>homing</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>homingspiral</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>launchedballistic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>linked</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>loworbit</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="ProjSpwnPoint">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>halo</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>head</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>lrhand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>monster0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>monster1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>monster2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>monster3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>monster4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>mouth</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>rhand</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QComboBox" name="ProjSound">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>al_en_arrows03</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>cb_sh_bow2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>spr_los</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QComboBox" name="ProjOrientation">
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>path</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="QComboBox" name="ImpactSEF">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_aoe</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_aoe</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_aoe.sef</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QComboBox" name="LowProjSEF">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_travel</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bless_proj</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_darkness_travel.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_bombardment.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fireball</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_hellball.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_isaac_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_isaac_greater.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magicmissile.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_meteor_swarm.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbAcid_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbSound_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbAcid.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbCold.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbElec.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbElec_lesser.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbFire.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_orbSound.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_scintillating_sphere.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_shades_tgt.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_arrowtrail.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_infinite_arrow.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_quillfire.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>fx_shard_attack.sef</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="10" column="1">
+         <widget class="QComboBox" name="LowImpactSEF">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_abjuration_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_conjuration_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_enchantment_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_evocation_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_illusion_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_aoe</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_necromancy_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_transmutation_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_acid_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_fire_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_aoe</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_ice_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_lightning_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_sonic_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_magic_hit.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_holy_aoe.sef</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>sp_eldritch_aoe.sef</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabOutput">
+       <attribute name="title">
+        <string>Output</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="Output">
+          <property name="font">
+           <font>
+            <family>Courier New</family>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="GenerateOutput">
+          <property name="text">
+           <string>Regenerate Output</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabText">
+       <attribute name="title">
+        <string>Text</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QTextEdit" name="SpellText">
+          <property name="acceptRichText">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnClean">
+          <property name="text">
+           <string>Clean for NWN2</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="quickspellgenerator.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>GenerateOutput</sender>
+   <signal>clicked()</signal>
+   <receiver>QuickSpellGeneratorClass</receiver>
+   <slot>UpdateOutput()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClean</sender>
+   <signal>clicked()</signal>
+   <receiver>QuickSpellGeneratorClass</receiver>
+   <slot>CleanText()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>364</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>300</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>UpdateOutput()</slot>
+  <slot>CleanText()</slot>
+ </slots>
+</ui>
