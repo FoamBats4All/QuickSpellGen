@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>602</width>
-    <height>418</height>
+    <height>414</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -192,7 +192,7 @@
            <string>Script that is called when the spell has been cast.</string>
           </property>
           <property name="text">
-           <string></string>
+           <string/>
           </property>
           <property name="maxLength">
            <number>48</number>
@@ -328,7 +328,7 @@
            <string>Can an item be give immunity to this spell?</string>
           </property>
           <property name="text">
-           <string> </string>
+           <string/>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -727,7 +727,7 @@
            <string>Can the spell be interrupted?</string>
           </property>
           <property name="text">
-           <string> </string>
+           <string/>
           </property>
           <property name="checked">
            <bool>true</bool>
@@ -1206,7 +1206,7 @@
            <string>Can this spell be spontaneously cast?</string>
           </property>
           <property name="text">
-           <string> </string>
+           <string/>
           </property>
          </widget>
         </item>
@@ -1506,53 +1506,6 @@
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
           </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QComboBox" name="ConjAnim">
-          <property name="statusTip">
-           <string>What type of animation the spell uses during casting.</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>None</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Attack</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Defensive</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Hand</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Head</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Major</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Party</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Bardsong</string>
-           </property>
-          </item>
          </widget>
         </item>
         <item row="1" column="0">
@@ -1927,53 +1880,6 @@
           </property>
          </widget>
         </item>
-        <item row="5" column="1">
-         <widget class="QComboBox" name="CastAnim">
-          <property name="statusTip">
-           <string>What type of animation the spell uses during casting.</string>
-          </property>
-          <item>
-           <property name="text">
-            <string>None</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Attack</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Defensive</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Hand</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Head</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Major</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Party</string>
-           </property>
-          </item>
-          <item>
-           <property name="text">
-            <string>Bardsong</string>
-           </property>
-          </item>
-         </widget>
-        </item>
         <item row="6" column="0">
          <widget class="QLabel" name="label_37">
           <property name="minimumSize">
@@ -2236,6 +2142,110 @@
           <item>
            <property name="text">
             <string>sp_eldritch_conjure</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QComboBox" name="ConjAnim">
+          <property name="statusTip">
+           <string>What type of animation the spell uses during casting.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>attack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>defensive</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>head</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>major</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>party</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>self</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bardsong</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QComboBox" name="CastAnim">
+          <property name="statusTip">
+           <string>What type of animation the spell uses during casting.</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>None</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>attack</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>defensive</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>hand</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>head</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>major</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>party</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>self</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>bardsong</string>
            </property>
           </item>
          </widget>
@@ -2751,14 +2761,14 @@
         <item row="0" column="1">
          <widget class="QCheckBox" name="HasProjectile">
           <property name="text">
-           <string> </string>
+           <string/>
           </property>
          </widget>
         </item>
         <item row="1" column="1">
          <widget class="QCheckBox" name="Proj">
           <property name="text">
-           <string> </string>
+           <string/>
           </property>
          </widget>
         </item>
